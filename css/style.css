@@ -1,0 +1,98 @@
+/* main rules */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  padding: 14px;
+  margin: 14px auto;
+  text-align: center;
+}
+
+.calc {
+  width: 450px;
+  margin: auto;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  background-color: yellow;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: right;
+  padding: 8px;
+  font-size: 2em;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.btns button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.number {
+  background-color: rgb(56, 113, 218);
+  transition: all .5s ease-in-out;
+}
+
+.number:hover {
+  background-color: rgb(45, 45, 209);
+}
+
+.calculate {
+  background-color: rgb(105, 168, 9);
+  transition: all .5s ease-in-out;
+}
+
+.calculate:hover {
+  background-color: green;
+}
+
+.operation {
+  background-color: orange;
+  transition: all .5s ease-in-out;
+}
+
+.operation:hover {
+  background-color: rgb(187, 123, 4);
+}
+
+.clear {
+  background-color: orangered;
+  transition: all .5s ease-in-out;
+}
